@@ -44,13 +44,6 @@
             width: 5vh;
         }
 
-        #NCoin {
-            position: absolute;
-            top: 2vh;
-            right: 2vh;
-            width: 5vh;
-        }
-
         #coin-score {
             position: absolute;
             top: -4.6vh;
@@ -293,6 +286,8 @@
                     saveCoinScore();
                     coinArray[i].dispose();
                     coinArray.splice(i, 1);
+                    NCoinArray[i].dispose();
+                    NCoinArray.splice(i, 1);
                 }
             }
         });
